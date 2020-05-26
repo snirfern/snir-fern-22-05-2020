@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import "./App.css";
+import Header from "./components/AppHeader/Header";
+import Favorites from "./components/Favorites/Favorites";
+import Main from "./components/Main/Main";
+import { connect } from "react-redux";
+import { initPage } from "./redux/actions";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+function App(props) {
+  React.useEffect(() => {
+    if (props.selectedCity === undefined && props.errors.length < 2)
+      props.init();
+  }, [props]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Route exact path="/" component={(props) => <Main {...props} />} />
+        <Route
+          path="/favorites"
+          component={(props) => <Favorites {...props} />}
+        />
+      </Router>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  selectedCity: state.selectedCityWeather,
+  errors: state.errors,
+  loading: state.loading,
+  forecast: state.forecast,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  init: () => dispatch(initPage()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

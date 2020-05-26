@@ -1,7 +1,16 @@
 .App {
   text-align: center;
+  font-family: "Roboto Slab";
+  height: 100vh;
+  display: flex;
+  margin: auto !important;
+  flex-direction: column;
 }
-
+body {
+  padding: 0px;
+  margin: 0px;
+  padding: 0 !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
