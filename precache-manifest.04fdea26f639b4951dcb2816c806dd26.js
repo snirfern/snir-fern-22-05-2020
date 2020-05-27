@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d145705679823711641a9068fcc5074",
+    "revision": "fbe6a49fc8b84019f54ffe9b5cd98f45",
     "url": "/snir-fern-22-05-2020/index.html"
   },
   {
-    "revision": "0bf51587b0ac2b5d80c7",
+    "revision": "8503522e54e8fc926a9b",
     "url": "/snir-fern-22-05-2020/static/css/main.a71d2aab.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/snir-fern-22-05-2020/static/js/2.f4b66f59.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bf51587b0ac2b5d80c7",
-    "url": "/snir-fern-22-05-2020/static/js/main.08496b6b.chunk.js"
+    "revision": "8503522e54e8fc926a9b",
+    "url": "/snir-fern-22-05-2020/static/js/main.fcfe2454.chunk.js"
   },
   {
     "revision": "09142436ba009f51b460",
