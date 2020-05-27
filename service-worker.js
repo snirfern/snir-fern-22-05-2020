@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/snir-fern-22-05-2020/precache-manifest.f60c14710b7345d6cfd9cd8d9d2dc3bb.js"
+  "/snir-fern-22-05-2020/precache-manifest.947035dffde8f076f497dc96670c95c4.js"
 );
 
 self.addEventListener('message', (event) => {
