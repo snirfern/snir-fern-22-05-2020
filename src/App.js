@@ -5,7 +5,7 @@ import Favorites from "./components/Favorites/Favorites";
 import Main from "./components/Main/Main";
 import { connect } from "react-redux";
 import { initPage } from "./redux/actions";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, HashRouter as Router } from "react-router-dom";
 function App(props) {
   React.useEffect(() => {
     if (props.selectedCity === undefined && props.errors.length < 2)
