@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/snir-fern-22-05-2020/static/css/main.a71d2aab.chunk.css",
-    "main.js": "/snir-fern-22-05-2020/static/js/main.dacc0ca7.chunk.js",
-    "main.js.map": "/snir-fern-22-05-2020/static/js/main.dacc0ca7.chunk.js.map",
+    "main.js": "/snir-fern-22-05-2020/static/js/main.ed200df6.chunk.js",
+    "main.js.map": "/snir-fern-22-05-2020/static/js/main.ed200df6.chunk.js.map",
     "runtime-main.js": "/snir-fern-22-05-2020/static/js/runtime-main.508fff6d.js",
     "runtime-main.js.map": "/snir-fern-22-05-2020/static/js/runtime-main.508fff6d.js.map",
     "static/js/2.1b8243c7.chunk.js": "/snir-fern-22-05-2020/static/js/2.1b8243c7.chunk.js",
     "static/js/2.1b8243c7.chunk.js.map": "/snir-fern-22-05-2020/static/js/2.1b8243c7.chunk.js.map",
     "index.html": "/snir-fern-22-05-2020/index.html",
-    "precache-manifest.a39ec34a2d6b79e17da3ef225b91e34f.js": "/snir-fern-22-05-2020/precache-manifest.a39ec34a2d6b79e17da3ef225b91e34f.js",
+    "precache-manifest.9340fef539cc97f5b4721e6bf7d1382b.js": "/snir-fern-22-05-2020/precache-manifest.9340fef539cc97f5b4721e6bf7d1382b.js",
     "service-worker.js": "/snir-fern-22-05-2020/service-worker.js",
     "static/css/main.a71d2aab.chunk.css.map": "/snir-fern-22-05-2020/static/css/main.a71d2aab.chunk.css.map",
     "static/js/2.1b8243c7.chunk.js.LICENSE.txt": "/snir-fern-22-05-2020/static/js/2.1b8243c7.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.508fff6d.js",
     "static/js/2.1b8243c7.chunk.js",
     "static/css/main.a71d2aab.chunk.css",
-    "static/js/main.dacc0ca7.chunk.js"
+    "static/js/main.ed200df6.chunk.js"
   ]
 }
