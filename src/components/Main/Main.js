@@ -6,6 +6,7 @@ import Errors from "../Errors/Errors";
 import { ThemeContext } from "../Theme/Theme";
 import Spinner from "../Spinner/Spinner";
 function Main(props) {
+  const { errorsProp } = props;
   const [errors, setErrors] = useState([]);
   const themeState = useContext(ThemeContext);
   const main_container = {
@@ -20,7 +21,7 @@ function Main(props) {
   };
   React.useEffect(() => {
     if (props.errors.length >= 2) setErrors(props.errors);
-  }, [props]);
+  }, [props.errors]);
   if (props.loading)
     return (
       <div
@@ -34,7 +35,8 @@ function Main(props) {
       </div>
     );
 
-  if (errors.length >= 2) return <Errors errors={props.errors} />;
+  if (errors.length >= 2 || props.selectedCity === undefined)
+    return <Errors errors={props.errors} />;
   return (
     <div style={main_container}>
       <div

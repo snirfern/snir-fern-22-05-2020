@@ -13,13 +13,13 @@ function SearchInput(props) {
   const classes = useStyles();
   const [autoCompleteLoading, setAutoCompleteLoading] = useState(false);
   const [value, setValue] = useState("");
-
+  const { options } = props;
   React.useEffect(() => {
     if (props.options.length > 0) setAutoCompleteLoading(false);
     setTimeout(() => {
-      if (props.options.length === 0) setAutoCompleteLoading(false);
+      if (options.length === 0) setAutoCompleteLoading(false);
     }, 5000);
-  }, [props.options]);
+  }, [options]);
   function handleChange(v) {
     let cityKey = props.options.filter(
       (o) =>
@@ -39,7 +39,7 @@ function SearchInput(props) {
     <div style={{ paddingTop: 5, paddingBottom: 5 }}>
       <div className={classes.root}>
         <Autocomplete
-          disabled={props.errors.length >= 2}
+          disabled={props.errors.length > 0}
           id="cities_autocomplete"
           style={{ width: 400, backgroundcolor: "white" }}
           options={props.options.map((o) => {

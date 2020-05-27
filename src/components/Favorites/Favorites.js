@@ -15,7 +15,7 @@ function Favorites(props) {
   const { history } = props;
   const classes = useStyles();
   const [errors, setErrors] = useState([]);
-  let favorites = props.favorites;
+  const { favorites } = props;
   React.useEffect(() => {
     if (props.errors.length >= 2) setErrors(props.errors);
     setErrors(props.errors);
@@ -23,7 +23,7 @@ function Favorites(props) {
     if (props.selectedCity && props.selectedCity.Key) {
       if (favorites.length === 0 && ls > 0 && !props.loading) props.Favorites();
     }
-  }, []);
+  }, [favorites]);
   if (errors.length >= 2) return <Errors errors={props.errors} />;
   const container_theme = {
     backgroundColor: themeState.theme.primary,

@@ -131,7 +131,7 @@ export const favorites = (key, cityName) => {
     keys.forEach((key) =>
       promises.push(
         axios.get(
-          "http://dataservice.accuweather.com/currentconditions/v1/" +
+          "https://dataservice.accuweather.com/currentconditions/v1/" +
             key.Key +
             "?apikey=" +
             process.env.REACT_APP_API

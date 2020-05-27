@@ -6,11 +6,15 @@ import Main from "./components/Main/Main";
 import { connect } from "react-redux";
 import { initPage } from "./redux/actions";
 import { Route, HashRouter as Router } from "react-router-dom";
+
 function App(props) {
+  const { selectedCity, errors, loading, init } = props;
+
   React.useEffect(() => {
-    if (props.selectedCity === undefined && props.errors.length < 2)
-      props.init();
-  }, [props]);
+    if (selectedCity === undefined && errors.length === 0 && !loading) {
+      init();
+    }
+  }, [selectedCity, errors, loading, init]);
   return (
     <div className="App">
       <Router>
